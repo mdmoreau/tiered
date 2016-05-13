@@ -1,9 +1,6 @@
 var bs = require('browser-sync');
 var gulp = require('gulp');
-var cssnano = require('gulp-cssnano');
-var rename = require('gulp-rename');
 var sass = require('gulp-sass');
-var uglify = require('gulp-uglify');
 
 gulp.task('html', function() {
   return gulp.src('src/index.html')
@@ -15,18 +12,11 @@ gulp.task('sass', function() {
   return gulp.src('src/sass/tiered.scss')
     .pipe(sass())
     .pipe(gulp.dest('dist/css'))
-    .pipe(bs.stream())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(cssnano())
-    .pipe(gulp.dest('dist/css'))
     .pipe(bs.stream());
 });
 
 gulp.task('js', function() {
   return gulp.src('src/js/tiered.js')
-    .pipe(gulp.dest('dist/js'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
     .pipe(gulp.dest('dist/js'))
     .on('end', bs.reload);
 });

@@ -1,1 +1,0 @@
-.tiered{position:relative;overflow:hidden}.tiered ul{margin:0}.tiered li>:first-child{display:block}.tiered__scroll{width:100%;height:100%;overflow:auto}.tiered__header{position:absolute;top:0;left:0}.tiered__header__item{position:relative;z-index:1}.tiered__header__item--offset{z-index:0}
