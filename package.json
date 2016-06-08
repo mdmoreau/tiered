@@ -1,12 +1,29 @@
 {
   "name": "tiered",
   "version": "0.1.0",
-  "devDependencies": {
-    "browser-sync": "^2.11.1",
-    "gulp": "gulpjs/gulp.git#4.0",
-    "gulp-sass": "^2.2.0"
-  },
+  "description": "Tiered, sticky, scrolling menus",
+  "main": "index.js",
+  "style": "index.css",
   "scripts": {
-    "gulp": "gulp"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "browser-sync start -s -f 'index.html' 'index.css' 'index.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdmoreau/tiered.git"
+  },
+  "keywords": [
+    "menu",
+    "scroll",
+    "sticky"
+  ],
+  "author": "mdmoreau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdmoreau/tiered/issues"
+  },
+  "homepage": "https://github.com/mdmoreau/tiered#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0"
   }
 }

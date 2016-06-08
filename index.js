@@ -15,7 +15,7 @@ function tiered(element) {
   self.getParents = function(el, selector) {
     var parents = [];
     while ((el = el.parentNode) && el !== document) {
-        if (!selector || self.matches(el, selector)) parents.unshift(el);
+      if (!selector || self.matches(el, selector)) parents.unshift(el);
     }
     return parents;
   };
